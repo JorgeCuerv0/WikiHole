@@ -9,10 +9,6 @@ WikiHole is an engaging web app that allows users to explore random Wikipedia fa
 - **Night Mode:** Toggle between day and night modes for better readability.
 - **Font Size Adjustment:** Increase or decrease the font size for accessibility.
 
-## Screenshots
-
-![WikiHole Screenshot](path_to_screenshot)
-
 ## Installation
 
 1. **Clone the repository:**
