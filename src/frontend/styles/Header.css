@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: inherit;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .header-left, .header-center, .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left .logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .header-left .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header-center .depth {
+    font-size: 1.5rem;
+  }
+  
+  .header-right .btn {
+    margin-left: 10px;
+  }
+  
+  .mobile-header .header-right .btn-secondary,
+  .mobile-header .header-right .btn-secondary + .btn {
+    display: none;
+  }
+  
+  .desktop-header .header-right .btn-secondary,
+  .desktop-header .header-right .btn-secondary + .btn {
+    display: inline-block;
+  }
+  

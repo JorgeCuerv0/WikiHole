@@ -1,9 +1,17 @@
-/* CSS Styles for night mode, day mode, and various components */
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-/* Ensure night mode is properly styled */
-.night-mode {
-  background-color: #121212;
-  color: #ffffff;
+.container {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.logo-img {
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .day-mode {
@@ -11,76 +19,88 @@
   color: #000000;
 }
 
-/* Keep buttons and counter on top */
-.top-right-buttons {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: 1000;
-}
-
-.top-right-buttons .btn {
-  margin-bottom: 10px;
-}
-
-.font-size-buttons {
-  display: flex;
-  flex-direction: row;
-}
-
-.font-size-buttons .btn {
-  margin-bottom: 10px;
-}
-
-.top-left-counter {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-  z-index: 1000;
-}
-
-.night-mode .top-left-counter {
+.night-mode {
+  background-color: #121212;
   color: #ffffff;
 }
 
-.day-mode .top-left-counter {
-  color: #000000;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: inherit;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
-.fact-section {
-  transition: all 0.5s ease;
+.header-left, .header-center, .header-right {
+  display: flex;
+  align-items: center;
 }
 
-.fact-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.mt-3 {
-  margin-top: 1rem;
-}
-
-.mt-5 {
-  margin-top: 3rem;
-}
-
-.logo-img {
+.header-left .logo-img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
 }
 
-.title-container {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
+.header-left .title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.title-container h1 {
+.header-center .depth {
+  font-size: 1.5rem;
+}
+
+.header-right .btn {
   margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .mobile-header .header-right .btn-secondary,
+  .mobile-header .header-right .btn-secondary + .btn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+  
+  .desktop-header {
+    display: flex;
+  }
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-75 {
+  width: 75% !important;
 }
