@@ -3,6 +3,7 @@ import axios from 'axios';
 import RelatedFact from './RelatedFact';
 import { FaMoon, FaSun, FaPlus, FaMinus } from 'react-icons/fa';
 import logo from '../assets/logo.png';
+import newLogo from '/Users/jorgesandoval/Desktop/HTML/wikihole/dist/logo.png';
 
 const RandomTopic = () => {
   const [initialTopics, setInitialTopics] = useState([]);
